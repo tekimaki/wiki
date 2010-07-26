@@ -6,6 +6,6 @@
 	</div>
 
 	<div class="body">
-		{include file="bitpackage:liberty/edit_structure.tpl"}
+		{include file="bitpackage:libertystructure/edit_structure.tpl"}
 	</div><!-- end .body -->
 </div><!-- end .edit -->

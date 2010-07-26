@@ -140,7 +140,7 @@ if( isset($_REQUEST["createstructure"]) ) {
 
 	// set the correct display template
 	$mid = 'bitpackage:wiki/edit_book.tpl';
-	include_once( LIBERTY_PKG_PATH.'edit_structure_inc.php');
+	include_once( LIBERTYSTRUCTURE_PKG_PATH.'edit_structure_inc.php');
 } else {
 	// user is just trying to create a new book - give them the form
 	$gBitSystem->setBrowserTitle( 'Create Wiki Book' );
