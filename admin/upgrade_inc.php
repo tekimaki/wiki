@@ -225,7 +225,7 @@ array( 'QUERY' =>
 // STEP 5
 array( 'PHP' => '
 	global $gBitSystem;
-	require_once( LIBERTY_PKG_PATH."LibertyStructure.php" );
+	require_once( LIBERTYSTRUCTURE_PKG_PATH."LibertyStructure.php" );
 	require_once( WIKI_PKG_PATH."BitBook.php" );
 	$query = "SELECT `structure_id`, `content_id` FROM `".BIT_DB_PREFIX."tiki_structures` WHERE `parent_id` IS NULL OR `parent_id`=0";
 	$roots = $gBitSystem->mDb->getAssoc( $query );

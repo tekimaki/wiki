@@ -141,5 +141,5 @@ $gBitInstaller->registerContentObjects( WIKI_PKG_NAME, array(
 
 // Requirements
 $gBitInstaller->registerRequirements( WIKI_PKG_NAME, array(
-    'liberty' => array( 'min' => '2.1.4' ),
+    'liberty' => array( 'min' => '2.1.5' ),
 ));

@@ -25,7 +25,7 @@ if( isset( $_COOKIE['book_section'] ) && $_COOKIE['book_section'] == 'o' ) {
 }
 $gBitSmarty->assign( 'book_section',$book_section );
 
-include_once( LIBERTY_PKG_PATH.'LibertyStructure.php');
+include_once( LIBERTYSTRUCTURE_PKG_PATH.'LibertyStructure.php');
 include_once( WIKI_PKG_PATH.'BitBook.php');
 
 global $gStructure;
