@@ -37,7 +37,7 @@ global $gStructure;
 // get a book instance
 global $gContent;
 if( @BitBase::verifyId( $_REQUEST["structure_id"] ) ) {
-	include_once( LIBERTY_PKG_PATH.'lookup_content_inc.php' );
+	include_once( LIBERTYSTRUCTURE_PKG_PATH.'lookup_structure_inc.php' );
 	if( empty( $gContent ) ){
 		$gBitSystem->fatalError( 'Error: Invalid structure id, the book you requested could not be found.' );
 	}
