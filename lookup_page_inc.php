@@ -17,6 +17,7 @@
  * required setup
  */
 require_once( WIKI_PKG_PATH.'BitBook.php');
+require_once( LIBERTYSTRUCTURE_PKG_PATH.'LibertyStructure.php' );
 
 global $gContent;
 include_once( LIBERTY_PKG_PATH.'lookup_content_inc.php' );
@@ -72,7 +73,7 @@ if( empty( $gStructure ) ) {
 	} else {
 		$structure='';
 	}
-	$structs = $gContent->getStructures();
+	$structs = LibertyStructure::getStructures( $gContent );
 	if (count($structs)==1) {
 		$gStructure = new LibertyStructure( $structs[0]['structure_id'] );
 		if( $gStructure->load() ) {

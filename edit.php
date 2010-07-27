@@ -18,6 +18,7 @@
  */
 require_once( '../kernel/setup_inc.php' );
 include_once( WIKI_PKG_PATH.'BitBook.php' );
+require_once( LIBERTYSTRUCTURE_PKG_PATH.'LibertyStructure.php' );
 
 $gBitSystem->verifyPackage( 'wiki' );
 
@@ -234,8 +235,8 @@ if( isset( $_REQUEST["preview"] ) ) {
 	$gContent->invokeServices( 'content_preview_function' );
 }
 
-if( $gContent->isInStructure() ) {
-	$gBitSmarty->assign( 'showstructs', $gContent->getStructures() );
+if( $gContent->isValid() && LbertyStructure::contentIsInStructure( $gContent, $gContent->mContentId ) ) {
+	$gBitSmarty->assign( 'showstructs', LibertyStructure::getStructures( $gContent ) );
 }
 
 // Flag for 'page bar' that currently 'Edit' mode active
