@@ -1,5 +1,22 @@
 <?php
 
+global $gBitSystem;
+
+$gBitSystem->registerPackageInfo( WIKI_PKG_NAME, array(
+	'description' => "A wiki is 'the simplest online database that could possibly work.' No HTML or programming knowledge is needed to contribute to a wiki.",
+	'license' => '<a href="http://www.gnu.org/licenses/licenses.html#LGPL">LGPL</a>',
+) );
+
+// Requirements
+$gBitSystem->registerRequirements( WIKI_PKG_NAME, array(
+    'liberty' => array( 'min' => '2.1.5' ),
+));
+
+
+// Install process
+global $gBitInstaller;
+if( is_object( $gBitInstaller ) ){
+
 $tables = array(
 
 'wiki_pages' => "
@@ -23,11 +40,6 @@ global $gBitInstaller;
 foreach( array_keys( $tables ) AS $tableName ) {
 	$gBitInstaller->registerSchemaTable( WIKI_PKG_NAME, $tableName, $tables[$tableName] );
 }
-
-$gBitInstaller->registerPackageInfo( WIKI_PKG_NAME, array(
-	'description' => "A wiki is 'the simplest online database that could possibly work.' No HTML or programming knowledge is needed to contribute to a wiki.",
-	'license' => '<a href="http://www.gnu.org/licenses/licenses.html#LGPL">LGPL</a>',
-) );
 
 // ### Indexes
 $indices = array (
@@ -139,7 +151,4 @@ $gBitInstaller->registerContentObjects( WIKI_PKG_NAME, array(
 	'BitBook' => WIKI_PKG_PATH.'BitBook.php',
 ));
 
-// Requirements
-$gBitInstaller->registerRequirements( WIKI_PKG_NAME, array(
-    'liberty' => array( 'min' => '2.1.5' ),
-));
+}
