@@ -1,0 +1,129 @@
+---
+wiki: 
+  version: 1.0.1
+  required: false
+  requirements: 
+    liberty: 
+      min: 2.1.5
+    libertystructure: 
+      min: 0.0.0
+  description: >
+    A wiki is 'the simplest online database
+    that could possibly work.' No HTML or
+    programming knowledge is needed to
+    contribute to a wiki.
+  license: 
+    name: LGPL
+    description: Licensed under the GNU LESSER GENERAL PUBLIC LICENSE.
+    url: http://www.gnu.org/copyleft/lesser.html
+  homeable: false
+  tables: 
+    wiki_pages: |
+      
+      page_id I4 PRIMARY,
+      content_id I4 NOTNULL,
+      wiki_page_size I4 DEFAULT 0,
+      edit_comment C(200),
+      flag C(1)
+      
+    wiki_footnotes: |
+      
+      user_id I4 PRIMARY,
+      page_id I4 NOTNULL,
+      data X
+      
+  indexes: 
+    wiki_pages_content_idx: 
+      table: wiki_pages
+      cols: content_id
+      opts: UNIQUE
+    wiki_page_footnotes_page_idx: 
+      table: wiki_footnotes
+      cols: page_id
+      opts: 
+  sequences: 
+    wiki_pages_page_id_seq: 
+      start: 1
+  permissions: 
+    p_wiki_admin_book: 
+      description: Can administer books
+      level: editors
+    p_wiki_admin: 
+      description: Can admin the wiki
+      level: admin
+    p_wiki_update_book: 
+      description: Can edit books
+      level: registered
+    p_wiki_create_book: 
+      description: Can create books
+      level: registered
+    p_wiki_edit_copyright: 
+      description: Can edit copyright notices
+      level: registered
+    p_wiki_edit_dynvar: 
+      description: Can edit dynamic variables
+      level: editors
+    p_wiki_update_page: 
+      description: Can edit pages
+      level: registered
+    p_wiki_create_page: 
+      description: Can create pages
+      level: registered
+    p_wiki_list_pages: 
+      description: Can list pages
+      level: basic
+    p_wiki_lock_page: 
+      description: Can lock pages
+      level: editors
+    p_wiki_remove_page: 
+      description: Can remove a wiki page
+      level: editors
+    p_wiki_rename_page: 
+      description: Can rename pages
+      level: editors
+    p_wiki_rollback: 
+      description: Can rollback pages
+      level: editors
+    p_wiki_save_minor: 
+      description: Can save as minor edit
+      level: registered
+    p_wiki_view_history: 
+      description: Can view page history
+      level: basic
+    p_wiki_view_page: 
+      description: Can view page/pages
+      level: basic
+  preferences: 
+    wiki_attachments: y
+    wiki_backlinks: y
+    wiki_book_show_navigation: y
+    wiki_book_show_path: y
+    wiki_books: y
+    wiki_description: y
+    wiki_dump: y
+    wiki_history: y
+    wiki_home_page: Welcome
+    wiki_last_changes: y
+    wiki_like_pages: y
+    wiki_list_backlinks: y
+    wiki_list_comment: y
+    wiki_list_creator: y
+    wiki_list_hits: y
+    wiki_list_lastmodif: y
+    wiki_list_lastver: y
+    wiki_list_links: y
+    wiki_list_name: y
+    wiki_list_orphans: y
+    wiki_list_pages: y
+    wiki_list_size: y
+    wiki_list_status: y
+    wiki_list_user: y
+    wiki_list_versions: y
+    wiki_page_regex: strict
+    wiki_page_title: y
+    wiki_pictures: y
+    wiki_plurals: y
+    wiki_rankings: y
+    wiki_sandbox: y
+    wiki_tables: new
+    wiki_warn_on_edit_time: 2
