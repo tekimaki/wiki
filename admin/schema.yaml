@@ -127,3 +127,6 @@ wiki:
     wiki_sandbox: y
     wiki_tables: new
     wiki_warn_on_edit_time: 2
+  contenttypes:
+    BitPage: BitPage.php
+    BitBook: BitBook.php
