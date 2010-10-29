@@ -20,7 +20,7 @@
 				{/forminput}
 			</div>
 
-			<div class="row submit">
+			<div class="buttonHolder row submit">
 				<input type="submit" name="addemail" value="{tr}Add email address{/tr}" />
 			</div>
 		{/form}

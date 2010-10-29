@@ -127,7 +127,7 @@
 
 						{include file="bitpackage:liberty/edit_services_inc.tpl" serviceFile="content_edit_mini_tpl"}
 
-						<div class="row submit">
+						<div class="buttonHolder row submit">
 							<input type="submit" name="fCancel" value="{tr}Cancel{/tr}" />&nbsp;
 							<input type="submit" name="preview" value="{tr}Preview{/tr}" />&nbsp;
 							<input type="submit" name="fSavePage" value="{tr}Save{/tr}" />
@@ -225,7 +225,7 @@
 							{/if} { * end upload file row * }
 						*}
 
-							<div class="row submit">
+							<div class="buttonHolder row submit">
 								<input type="submit" name="do_suck" value="{tr}Import{/tr}" />
 							</div>
 						{/legend}

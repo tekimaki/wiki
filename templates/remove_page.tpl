@@ -33,7 +33,7 @@
 				{/forminput}
 			</div>
 
-			<div class="row submit">
+			<div class="buttonHolder row submit">
 				<input type="submit" name="remove" value="{tr}remove{/tr}" />
 			</div>
 		{/form}

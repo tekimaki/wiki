@@ -6,7 +6,7 @@
 			<div class="row">
 				<input type="text" size="15" name="page" />
 			</div>
-			<div class="row submit">
+			<div class="buttonHolder row submit">
 				<input type="submit" name="quickedit" value="{tr}edit{/tr}" />
 			</div>
 		{/form}

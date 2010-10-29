@@ -31,7 +31,7 @@
 					{/forminput}
 				</div>
 
-				<div class="row submit">
+				<div class="buttonHolder row submit">
 					<input type="hidden" name="page_id" value="{$pageInfo.page_id}" />
 					<input type="hidden" name="copyright_id" value="{$copyrights[i].copyright_id|escape}" />
 					<input type="submit" name="editcopyright" value="{tr}edit{/tr}" />
@@ -70,7 +70,7 @@
 				{/forminput}
 			</div>
 
-			<div class="row submit">
+			<div class="buttonHolder row submit">
 				<input type="submit" name="addcopyright" value="{tr}add{/tr}" />
 			</div>
 		{/form}

@@ -38,7 +38,7 @@
 				{/forminput}
 			</div>
 
-			<div class="row submit">
+			<div class="buttonHolder row submit">
 				<input type="submit" name="wikifeatures" value="{tr}Change preferences{/tr}" />
 			</div>
 		{/form}
@@ -57,7 +57,7 @@
 					{/forminput}
 				</div>
 			{/foreach}
-			<div class="row submit">
+			<div class="buttonHolder row submit">
 				<input type="submit" name="wikibooks" value="{tr}Change preferences{/tr}" />
 			</div>
 		{/form}
@@ -76,7 +76,7 @@
 					{/forminput}
 				</div>
 			{/foreach}
-			<div class="row submit">
+			<div class="buttonHolder row submit">
 				<input type="submit" name="wikiinout" value="{tr}Change preferences{/tr}" />
 			</div>
 		{/form}
@@ -96,7 +96,7 @@
 				</div>
 			{/foreach}
 
-			<div class="row submit">
+			<div class="buttonHolder row submit">
 				<input type="submit" name="wikilistconf" value="{tr}Change preferences{/tr}" />
 			</div>
 		{/form}
@@ -122,7 +122,7 @@
 					{/forminput}
 				</div>
 
-				<div class="row submit">
+				<div class="buttonHolder row submit">
 					<input type="submit" name="setwikihome" value="{tr}Change preferences{/tr}" />
 				</div>
 			{/legend}
@@ -145,7 +145,7 @@
 					{/forminput}
 				</div>
 
-				<div class="row submit">
+				<div class="buttonHolder row submit">
 					<input type="submit" name="setwikiregex" value="{tr}Change preferences{/tr}" />
 				</div>
 			{/legend}
@@ -172,7 +172,7 @@
 					{/forminput}
 				</div>
 
-				<div class="row submit">
+				<div class="buttonHolder row submit">
 					<input type="submit" name="wikisetcopyright" value="{tr}Change preferences{/tr}" />
 				</div>
 			{/legend}
@@ -190,7 +190,7 @@
 					</div>
 				{/foreach}
 
-				<div class="row submit">
+				<div class="buttonHolder row submit">
 					<input type="submit" name="wikiwatch" value="{tr}Change preferences{/tr}" />
 				</div>
 			{/legend}

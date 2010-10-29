@@ -6,7 +6,7 @@
 		<div class="row">
 			<input name="find_title" size="14" type="text" accesskey="s" value="{$find}" />
 		</div>
-		<div class="row submit">
+		<div class="buttonHolder row submit">
 			<input type="submit" class="wikiaction" name="search" value="{tr}go{/tr}" />
 		</div>
 	{/form}

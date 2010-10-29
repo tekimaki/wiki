@@ -30,7 +30,7 @@
 					{/forminput}
 				</div>
 
-				<div class="row submit">
+				<div class="buttonHolder row submit">
 					<input type="submit" name="addpage" value="{tr}add page{/tr}" />
 					&nbsp;<input type="submit" name="clearpages" value="{tr}clear pages{/tr}" />
 				</div>
@@ -47,7 +47,7 @@
 					</ul>
 				</div>
 				
-				<div class="row submit">
+				<div class="buttonHolder row submit">
 					<input type="submit" name="print" value="{tr}print{/tr}" />
 				</div>
 			{/form}

@@ -26,7 +26,7 @@
 				{/forminput}
 			</div>
 
-			<div class="row submit">
+			<div class="buttonHolder row submit">
 				<input type="submit" value="{tr}Create new book{/tr}" name="createstructure" />
 			</div>
 		{/form}
